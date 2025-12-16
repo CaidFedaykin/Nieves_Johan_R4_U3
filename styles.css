@@ -1,0 +1,84 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #FFFFE0, #FFFACD);
+    text-align: center;
+    margin: 0;
+    padding: 40px;
+}
+
+#titulo {
+    color: #263238;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+#calculadora {
+    width: 280px;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+#pantalla {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    text-align: right;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    height: 48px;
+    border: none;
+    border-radius: 10%;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.btn:active {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.numero {
+    background-color: #e0e0e0;
+    color: #263238;
+}
+
+.operador {
+    background-color: #ff9800;
+    color: #ffffff;
+}
+
+.accion {
+    background-color: #ef5350;
+    color: #ffffff;
+}
+
+.igual {
+    background-color: #4caf50;
+    color: #ffffff;
+}
+
+.boton-resultado {
+    grid-column: span 4;
+    border-radius: 12px;
+    height: 50px;
+    font-size: 18px;
+}
